@@ -8,7 +8,7 @@ function FluidBackground(props: IFluidBackgroundProps) {
 
   useEffect(() => {
     WebglFluid(ref.current, {
-      IMMEDIATE: true,
+      IMMEDIATE: false,
       TRIGGER: "hover",
       SIM_RESOLUTION: 128,
       DYE_RESOLUTION: 1024,
