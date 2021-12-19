@@ -14,7 +14,9 @@ const Home: NextPage = () => {
     <>
       <div className="w-screen h-screen ">
         <div className="w-full h-full flex items-center justify-center ">
-          <span className="text-white text-9xl z-50">Portfolio</span>
+          <span className="text-white md:text-9xl z-50 text-4xl">
+            Portfolio
+          </span>
           <FluidBackgroundContainer />
         </div>
       </div>
