@@ -1,4 +1,5 @@
 import { createRef, useEffect } from "react";
+// @ts-ignore
 import WebglFluid from "webgl-fluid";
 interface IFluidBackgroundProps {}
 
