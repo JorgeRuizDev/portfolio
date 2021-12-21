@@ -39,8 +39,8 @@ function FluidBackground(props: IFluidBackgroundProps) {
   }, [ref]);
 
   return (
-    <div>
-      <canvas ref={ref} className="w-screen h-screen  fixed bottom-0 left-0" />
+    <div className="">
+      <canvas ref={ref} className=" -z-10 w-screen h-screen fixed bottom-0 left-0" />
     </div>
   );
 }
