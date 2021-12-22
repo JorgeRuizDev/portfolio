@@ -45,6 +45,10 @@
 
     }
 
+    .nav-links {
+        @apply flex flex-row  md:text-xl text-xl space-x-1 items-center;
+    }
+
     .timeline-wrap{
         list-style: none;
         @apply ml-0 pl-0 
