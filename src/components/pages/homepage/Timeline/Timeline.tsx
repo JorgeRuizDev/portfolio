@@ -7,6 +7,7 @@ function Timeline(props: ITimelineProps) {
   return (
     <>
       <ul className="z-10 md:p-10 p-2 border-2 border-white/[.5] w-fit timeline-wrap backdrop-blur-lg rounded-xl bg-transparent/[.5] ">
+        <h1 className="z-10 text-center mb-10">Timeline</h1>
         <li className="timeline">
           <TimelineItem
             since="2018"

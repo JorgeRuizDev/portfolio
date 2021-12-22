@@ -1,6 +1,8 @@
 import Presentation from "components/pages/homepage/Presentation";
+import TechProjects from "components/pages/homepage/TechProjects";
 import Timeline from "components/pages/homepage/Timeline";
 import type { NextPage } from "next";
+import React from "react";
 
 const Home: NextPage = () => {
   return (
@@ -8,10 +10,11 @@ const Home: NextPage = () => {
       <div className="max-w-screen flex flex-col">
         <div className="slide">
           <Presentation />
-        </div>
-        <h1 className="z-10 text-center">Timeline</h1>
-        <div className="slide flex flex-col items-center justify-start gap-y-52">
           
+        </div>
+        <TechProjects/>
+        <div className="slide w-full flex flex-col items-center justify-start md:gap-y-28 gap-y-10 xl:gap-y-52">
+        
           <Timeline />
         </div>
       </div>

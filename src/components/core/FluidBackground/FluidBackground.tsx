@@ -3,10 +3,23 @@ import { createRef, useEffect } from "react";
 import WebglFluid from "webgl-fluid";
 interface IFluidBackgroundProps {}
 
+const isTouchDevice = () => {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+};
+
 function FluidBackground(props: IFluidBackgroundProps) {
   const ref = createRef<HTMLCanvasElement>();
 
   useEffect(() => {
+
+    if (!ref.current){
+      return;
+    }
+
     WebglFluid(ref.current, {
       IMMEDIATE: false,
       TRIGGER: "hover",
@@ -40,7 +53,11 @@ function FluidBackground(props: IFluidBackgroundProps) {
 
   return (
     <div className="">
-      <canvas ref={ref} className="w-screen h-screen fixed bottom-0 left-0" />
+      {isTouchDevice() ? (
+        <div className="w-screen h-screen fixed bottom-0 left-0 bg-black"></div>
+      ) : (
+        <canvas ref={ref} className="w-screen h-screen fixed bottom-0 left-0" />
+      )}
     </div>
   );
 }
