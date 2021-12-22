@@ -41,18 +41,19 @@
     }
 
     .slide {
-        @apply w-full h-screen
+        @apply w-full h-screen p-10;
+
     }
 
     .timeline-wrap{
         list-style: none;
-        @apply ml-0 pl-0
+        @apply ml-0 pl-0 
     }
 
     .timeline {
 
         list-style: none;
-        @apply border-l border-l-white p-0  pb-6 relative pl-5 ml-2
+        @apply border-l border-l-white p-0  pb-12 relative pl-5 ml-2 
     }
     .timeline:last-child{
         @apply border-0 pb-0;

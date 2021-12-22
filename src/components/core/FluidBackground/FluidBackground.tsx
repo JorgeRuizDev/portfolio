@@ -13,11 +13,11 @@ function FluidBackground(props: IFluidBackgroundProps) {
       SIM_RESOLUTION: 128,
       DYE_RESOLUTION: 1024,
       CAPTURE_RESOLUTION: 512,
-      DENSITY_DISSIPATION: 2.5,
-      VELOCITY_DISSIPATION: 1.5,
-      PRESSURE: 0.7,
+      DENSITY_DISSIPATION: 5,
+      VELOCITY_DISSIPATION: 5,
+      PRESSURE: 0.5,
       PRESSURE_ITERATIONS: 20,
-      CURL: 15,
+      CURL: 10,
       SPLAT_RADIUS: 0.1,
       SPLAT_FORCE: 6000,
       SHADING: true,
@@ -40,7 +40,7 @@ function FluidBackground(props: IFluidBackgroundProps) {
 
   return (
     <div className="">
-      <canvas ref={ref} className=" -z-10 w-screen h-screen fixed bottom-0 left-0" />
+      <canvas ref={ref} className="w-screen h-screen fixed bottom-0 left-0" />
     </div>
   );
 }

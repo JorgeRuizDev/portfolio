@@ -9,7 +9,9 @@ const Home: NextPage = () => {
         <div className="slide">
           <Presentation />
         </div>
-        <div className="slide">
+        <h1 className="z-10 text-center">Timeline</h1>
+        <div className="slide flex flex-col items-center justify-start gap-y-52">
+          
           <Timeline />
         </div>
       </div>
