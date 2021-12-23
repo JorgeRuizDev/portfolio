@@ -1,5 +1,5 @@
 import React from "react";
-import { createRef, ReactNode} from "react";
+import { createRef, ReactNode } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useInView } from "react-intersection-observer";
 interface ICardRowProps {
@@ -34,13 +34,13 @@ function CardRow({ children }: ICardRowProps) {
         snap-mandatory snap-x scroll-smooth
         flex flex-row flex-nowrap  gap-x-5 items-start"
       >
-        <div ref={startRef} className="h-auto w-1" />
+        <div ref={startRef} className="h-auto [width:1px]" />
         {children.map((c, i) => (
           <div key={i} className="snap-center">
             {c}
           </div>
         ))}
-        <div ref={endRef} className="h-auto w-1" />
+        <div ref={endRef} className="h-auto [width:1px]" />
       </div>
       <button
         className="rotate-180 btn"

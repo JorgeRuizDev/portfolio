@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import useTouch from "hooks/useTouch";
 import React from "react";
 import Navbar from "components/core/Navbar";
+import Footer from "components/core/Footer";
 
 const FluidBackgroundContainer = dynamic(
   () => import("components/core/FluidBackground"),
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="p-2">
         <Component {...pageProps} />
       </div>
+      <Footer/>
     </>
   );
 }
