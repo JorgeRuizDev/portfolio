@@ -4,19 +4,14 @@ import WebglFluid from "webgl-fluid";
 interface IFluidBackgroundProps {}
 
 const isTouchDevice = () => {
-  return (
-    "ontouchstart" in window ||
-    navigator.maxTouchPoints > 0 ||
-    navigator.msMaxTouchPoints > 0
-  );
+  return "ontouchstart" in window || navigator?.maxTouchPoints > 0;
 };
 
 function FluidBackground(props: IFluidBackgroundProps) {
   const ref = createRef<HTMLCanvasElement>();
 
   useEffect(() => {
-
-    if (!ref.current){
+    if (!ref.current) {
       return;
     }
 
