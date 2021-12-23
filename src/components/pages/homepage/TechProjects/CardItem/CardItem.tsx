@@ -5,9 +5,10 @@ interface ICardItemProps {
   href?: string;
   img: string;
   text: string;
+  tag?: string;
 }
 
-function CardItem({ href, img, text }: ICardItemProps) {
+function CardItem({ href, img, text, tag }: ICardItemProps) {
   return (
     <a
       href={href}
@@ -16,10 +17,16 @@ function CardItem({ href, img, text }: ICardItemProps) {
       }`}
     >
       <div className="relative">
-        <img alt={text} src={img} width="150px" height="150px" />
+        <Image alt={text} src={img} width="150px" height="150px" />
         {href !== undefined && (
           <span className="text-white text-xl absolute right-0 bottom-0">
             <MdTouchApp />
+          </span>
+        )}
+
+        {tag && (
+          <span className="absolute left-0 bottom-0 bg-primary-base rounded-full  text-sm text-white p-1">
+            {tag}
           </span>
         )}
       </div>
