@@ -6,7 +6,7 @@ interface INavbarProps {}
 
 function Navbar(props: INavbarProps) {
   return (
-    <nav className="z-20 sticky top-0 left-0 bg-sky-700 rounded-b-md h-12 flex flex-row items-center">
+    <nav className="[z-index:35] sticky top-0 left-0 bg-sky-700 rounded-b-md h-12 flex flex-row items-center">
       <span className="text-2xl md:block hidden">Jorge Ruiz Dev</span>
 
       <div className="w-full max-w-[650px] flex flex-row justify-around">

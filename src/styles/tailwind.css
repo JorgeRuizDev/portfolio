@@ -28,7 +28,7 @@
 
       }
     body {
-        @apply text-white text-base font-sans bg-slate-900;
+        @apply text-white text-base font-sans bg-slate-900 scroll-smooth;
     }
 
     p {
@@ -93,5 +93,9 @@
         content: '';
         @apply w-3.5 h-3.5 bg-white rounded-full absolute top-0 shadow-lg;
         left: -7.5px;
-      }
+    }
+
+    .scroll-pos-item {
+        @apply flex flex-col items-center justify-center h-full w-full select-none;
+    }
 }

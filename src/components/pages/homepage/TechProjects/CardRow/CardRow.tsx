@@ -1,5 +1,5 @@
 import React from "react";
-import { createRef, ReactNode, useEffect, useState } from "react";
+import { createRef, ReactNode} from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useInView } from "react-intersection-observer";
 interface ICardRowProps {
@@ -12,7 +12,6 @@ function CardRow({ children }: ICardRowProps) {
   const { ref: startRef, inView: startInView } = useInView();
   const { ref: endRef, inView: endInView } = useInView();
 
-  console.log(startInView);
   return (
     <div className="flex flex-row justify-around w-full ">
       <button
