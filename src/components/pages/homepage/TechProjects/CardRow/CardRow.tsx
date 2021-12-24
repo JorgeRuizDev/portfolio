@@ -15,7 +15,7 @@ function CardRow({ children }: ICardRowProps) {
   return (
     <div className="flex flex-row justify-around w-full ">
       <button
-        className="z-10"
+        className="z-10 btn-transparent"
         disabled={startInView}
         onClick={() => {
           rowRef.current?.scrollTo({
@@ -43,7 +43,7 @@ function CardRow({ children }: ICardRowProps) {
         <div ref={endRef} className="h-auto [width:1px]" />
       </div>
       <button
-        className="rotate-180 btn"
+        className="rotate-180 btn btn-transparent"
         disabled={endInView}
         onClick={() => {
           rowRef.current?.scrollTo({

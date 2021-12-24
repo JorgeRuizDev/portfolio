@@ -62,8 +62,16 @@
         @apply  decoration-primary-base hover:underline text-sky-300 hover:text-sky-400
     }
 
+    .pill {
+        @apply btn  rounded-full
+    }
+
     .btn {
-        @apply hover:bg-white/[.1] py-2 px-4 flex flex-row items-center justify-center gap-2;
+        @apply py-2 px-4 flex flex-row items-center justify-center gap-2;
+    }
+
+    .btn-transparent {
+        @apply hover:bg-white/[.1]
     }
 
     .btn-primary {
