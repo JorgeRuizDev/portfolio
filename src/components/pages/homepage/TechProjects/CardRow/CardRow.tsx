@@ -13,9 +13,9 @@ function CardRow({ children }: ICardRowProps) {
   const { ref: endRef, inView: endInView } = useInView();
 
   return (
-    <div className="flex flex-row justify-around w-full">
+    <div className="flex flex-row justify-around w-full ">
       <button
-        className="z-10 btn"
+        className="z-10"
         disabled={startInView}
         onClick={() => {
           rowRef.current?.scrollTo({

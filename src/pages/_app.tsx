@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div>
         <FluidBackgroundContainer />
       </div>
-      <div className="p-2">
+      <div className="p-2 min-h-screen">
         <Component {...pageProps} />
       </div>
       <Footer/>

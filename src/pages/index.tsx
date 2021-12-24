@@ -49,7 +49,6 @@ const Home: NextPage = () => {
             </a>
           </p>
         </div>
-
         <Timeline />
       </div>
     </FullPage>

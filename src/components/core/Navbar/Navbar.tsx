@@ -3,6 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { FcAbout } from "react-icons/fc";
 import { BsFillCollectionFill } from "react-icons/bs";
+import ActiveLink from "../ActiveLink/ActiveLink";
 interface INavbarProps {}
 
 function Navbar(props: INavbarProps) {
@@ -15,19 +16,22 @@ function Navbar(props: INavbarProps) {
       </Link>
 
       <div className="w-full md:max-w-[500px] flex flex-row justify-around">
-        <a className="nav-links" href="#projects">
-          <span>
-            <BsFillCollectionFill />
-          </span>
-          <span className="">Portfolio</span>
-        </a>
-
-        <a className="nav-links" href="#about">
-          <span className="text-white">
-            <FaEnvelope />
-          </span>
-          <span className="">About</span>
-        </a>
+        <ActiveLink href="/#projects">
+          <a className="nav-links">
+            <span>
+              <BsFillCollectionFill />
+            </span>
+            <span className="">Portfolio</span>
+          </a>
+        </ActiveLink>
+        <ActiveLink href="/#about">
+          <a className="nav-links" >
+            <span className="text-white">
+              <FaEnvelope />
+            </span>
+            <span className="">About</span>
+          </a>
+        </ActiveLink>
 
         <a
           className="nav-links"

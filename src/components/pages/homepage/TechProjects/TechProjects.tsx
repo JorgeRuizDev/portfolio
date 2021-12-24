@@ -49,13 +49,13 @@ function TechProjects(props: ITechProjectsProps) {
           <CardItem
             img="/img/projects/dms.png"
             text="Questionnaire Platform"
-            href=""
+            href="/portfolio/questionnaire"
             tag="Web"
           />
           <CardItem
             img="/img/projects/prototype.svg"
             text="Prototypes"
-            href=""
+            href="/portfolio/prototypes"
             tag="Misc"
           />
         </CardRow>

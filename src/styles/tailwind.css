@@ -89,7 +89,7 @@
     }
 
     .slide {
-        @apply w-full h-screen lg:p-10 md:p-8 p-1;
+        @apply w-full min-h-screen lg:p-10 md:p-8 p-1;
 
     }
 
