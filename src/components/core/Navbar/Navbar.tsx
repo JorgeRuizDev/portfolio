@@ -1,5 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 import { FcAbout } from "react-icons/fc";
 import { BsFillCollectionFill } from "react-icons/bs";
 interface INavbarProps {}
@@ -7,7 +8,11 @@ interface INavbarProps {}
 function Navbar(props: INavbarProps) {
   return (
     <nav className="p-2 [z-index:35] sticky top-0 left-0 bg-sky-700 rounded-b-md h-12 flex flex-row items-center justify-between">
-      <a href=""><span className="text-2xl md:block hidden">JorgeRuizDev</span></a>
+      <Link href="/" passHref={true}>
+        <a>
+          <span className="text-2xl md:block hidden">JorgeRuizDev</span>
+        </a>
+      </Link>
 
       <div className="w-full md:max-w-[500px] flex flex-row justify-around">
         <a className="nav-links" href="#projects">
@@ -24,8 +29,11 @@ function Navbar(props: INavbarProps) {
           <span className="">About</span>
         </a>
 
-        <a className="nav-links" href="https://www.linkedin.com/in/jorge-ruiz-g%C3%B3mez-44223b184/">
-          <span >
+        <a
+          className="nav-links"
+          href="https://www.linkedin.com/in/jorge-ruiz-g%C3%B3mez-44223b184/"
+        >
+          <span>
             <FaLinkedin />
           </span>
           <span className="md:block hidden">LinkedIn</span>

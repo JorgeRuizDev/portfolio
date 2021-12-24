@@ -43,7 +43,7 @@ function TechProjects(props: ITechProjectsProps) {
           <CardItem
             img="/img/projects/spotify.png"
             text="SpotMyFM"
-            href=""
+            href="/portfolio/spotmyfm"
             tag="Web"
           />
           <CardItem
