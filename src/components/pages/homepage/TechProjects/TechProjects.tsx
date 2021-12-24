@@ -5,7 +5,7 @@ interface ITechProjectsProps {}
 
 function TechProjects(props: ITechProjectsProps) {
   return (
-    <div className="z-10 space-y-10">
+    <div className="z-10 space-y-10 relative">
       <div className="space-y-4">
         <h3 className="z-10">
           Technologies I{" "}
@@ -21,8 +21,8 @@ function TechProjects(props: ITechProjectsProps) {
           <CardItem img="/img/technologies/nextjs.png" text="NextJS" />
           <CardItem img="/img/technologies/tailwind.png" text="TailwindCSS" />
           <CardItem img="/img/technologies/react.png" text="ReactJS" />
-          <CardItem img="/img/technologies/sql.png" text="SQL DB" />
-          <CardItem img="/img/technologies/nosql.png" text="Document DB" />
+          <CardItem img="/img/technologies/sql.png" text="Relational Databases (SQL)" />
+          <CardItem img="/img/technologies/nosql.png" text="Document Databases (NOSQL)" />
 
           <CardItem img="/img/technologies/html.png" text="HTML5" />
           <CardItem img="/img/technologies/css.png" text="CSS3" />
@@ -34,7 +34,7 @@ function TechProjects(props: ITechProjectsProps) {
         </CardRow>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-4" id="projects">
         <h3 className="z-10">
           <span className="decoration-primary-base underline">Projects</span>
         </h3>
