@@ -32,17 +32,28 @@ export default function SpotMyFM() {
 
       <hr />
 
-      <div className="relative grid grid-cols-1 space-x-0 space-y-3 md:grid-cols-2 md:space-x-3 lg:grid-cols-3 lg:space-y-0">
+      <div className="relative grid grid-cols-1 space-x-0 space-y-3 sm:grid-cols-2 sm:space-x-3 md:grid-cols-3 md:space-y-0">
         <div className="flex flex-col space-y-3 items-center justify-center">
           <h3>Frontend</h3>
           <button className="pill bg-sky-400">TailwindCSS</button>
           <button className="pill bg-orange-600">NextJS</button>
+          <button className="pill bg-green-600">Typescript</button>
+          <button className="pill bg-red-500">DexieDB</button>
+          <button className="pill bg-gray-600">Zustand</button>
         </div>
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col space-y-3 items-center justify-center">
           <h3>Backend</h3>
+          <button className="pill bg-lime-600">NextJS</button>
+          <button className="pill bg-green-600">JWT</button>
+          <button className="pill bg-orange-600">OpenAPI</button>
+          <button className="pill bg-yellow-500">DynamoDB (AWS)</button>
         </div>
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col space-y-3 items-center justify-center">
           <h3>Other</h3>
+          <button className="pill bg-rose-700">Cypress</button>
+          <button className="pill bg-orange-600">Jest</button>
+          <button className="pill bg-green-600">Typescript</button>
+          <button className="pill bg-teal-900">TensorFlow</button>
         </div>
       </div>
     </div>

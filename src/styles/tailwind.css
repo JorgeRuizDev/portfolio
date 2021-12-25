@@ -80,7 +80,7 @@
 
     
     .btn-secondary {
-        @apply rounded-full border-2 border-primary-base shadow-sm shadow-primary-base bg-sky-800/[.5];
+        @apply rounded-full border-2 border-primary-base shadow-sm shadow-primary-base bg-sky-800/[.5] hover:bg-sky-800/[.3];
     }
 
     .scroll-hidden {

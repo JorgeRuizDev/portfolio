@@ -32,7 +32,7 @@ function ProjectHeader({
         <h2>{title}</h2>
         <hr />
         <p>{description}</p>
-        <div className="flex flex-row items-center justify-center flex-wrap space-x-2">
+        <div className="flex flex-1 flex-row items-center justify-center space-x-2">
           {web && (
             <ActiveLink href={web.link}>
               <a className="btn btn-primary"><BiWorld/>{web.title}</a>
