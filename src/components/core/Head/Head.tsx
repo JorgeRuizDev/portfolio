@@ -25,7 +25,10 @@ export default function Head({
         />
         <meta name="author" content="Jorge Ruiz Gómez" />
 
-        <meta property="og:image" content="/img/preview.png" />
+        <meta
+          property="og:image"
+          content="https://jorgeruizdev.com/img/preview.png"
+        />
         <meta
           property="og:image:alt"
           content="Jorge Ruiz Gómez Personal Webpage"
