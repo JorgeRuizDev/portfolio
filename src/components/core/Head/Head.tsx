@@ -25,6 +25,8 @@ export default function Head({
         <meta name="author" content="Jorge Ruiz Gómez" />
 
         <meta property="og:image" content="/img/preview.png" />
+        <meta property="og:image:secure_url" content="https://jorgeruizdev.com/img/preview.png" />
+        <meta property="og:image:type" content="image/jpeg" /> 
         <meta property="og:image:width" content="978" />
         <meta property="og:image:height" content="549" />
         <meta
