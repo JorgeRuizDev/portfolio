@@ -37,13 +37,14 @@ export default function Head({
           property="og:image:secure_url"
           content="https://jorgeruizdev.com/img/preview.png"
         />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="978" />
         <meta property="og:image:height" content="549" />
         <meta
           name="google-site-verification"
           content="-RJWFeQ1me1m_Il5D7IREO1To0OrutTPVKz50ZnUo8Y"
         />
+        <meta property="og:url" content="https://jorgeruizdev.com"></meta>
         <link rel="icon" href="/favicon.ico" />
       </NextHead>
     </>
