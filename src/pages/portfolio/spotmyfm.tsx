@@ -1,4 +1,6 @@
+import Feature from "components/core/Feature";
 import ProjectHeader from "components/core/ProjectHeader";
+import React from "react";
 
 export default function SpotMyFM() {
   return (
@@ -55,6 +57,85 @@ export default function SpotMyFM() {
           <button className="pill bg-green-600">Typescript</button>
           <button className="pill bg-teal-900">TensorFlow</button>
         </div>
+      </div>
+      <div className="space-y-10">
+        <Feature
+          title="Mobile First"
+          description={
+            <p className="text-lg">
+              SpotMyFM provides a great experience in mobile phones
+            </p>
+          }
+        >
+          <video
+            src="/demo/spotmyfm/responsive.mp4"
+            autoPlay={true}
+            loop={true}
+            muted={true}
+            className="rounded-xl"
+          ></video>
+        </Feature>
+
+        <Feature
+          title="Dark Theme"
+          description={
+            <p className="text-lg">
+              SpotMyFM has a persistent theme selection.
+            </p>
+          }
+        >
+          <video
+            src="/demo/spotmyfm/dark_mode.mp4"
+            loop={true}
+            autoPlay={true}
+            muted={true}
+            className="rounded-xl"
+          ></video>
+        </Feature>
+
+        <Feature
+          title="Filter your library"
+          description={
+            <p className="text-lg">
+              SpotMyFM includes multiple filters to check
+            </p>
+          }
+        >
+          <div className="space-y-2">
+            <video
+              src="/demo/spotmyfm/filter_date.mp4"
+              autoPlay={true}
+              muted={true}
+              loop={true}
+              className="rounded-xl"
+            ></video>
+            <video
+              src="/demo/spotmyfm/filter_genre.mp4"
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              className="rounded-xl"
+            ></video>
+          </div>
+        </Feature>
+
+        <Feature
+          title="Create Playlists"
+          description={
+            <p className="text-lg">
+              Create of Replaces an existing playlist with your track selection
+              / filtered results.
+            </p>
+          }
+        >
+          <video
+            src="/demo/spotmyfm/create_playlist.mp4"
+            autoPlay={true}
+            muted={true}
+            loop={true}
+            className="rounded-xl"
+          ></video>
+        </Feature>
       </div>
     </div>
   );

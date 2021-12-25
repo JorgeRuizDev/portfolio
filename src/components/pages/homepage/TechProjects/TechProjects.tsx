@@ -21,8 +21,14 @@ function TechProjects(props: ITechProjectsProps) {
           <CardItem img="/img/technologies/nextjs.png" text="NextJS" />
           <CardItem img="/img/technologies/tailwind.png" text="TailwindCSS" />
           <CardItem img="/img/technologies/react.png" text="ReactJS" />
-          <CardItem img="/img/technologies/sql.png" text="Relational Databases (SQL)" />
-          <CardItem img="/img/technologies/nosql.png" text="Document Databases (NOSQL)" />
+          <CardItem
+            img="/img/technologies/sql.png"
+            text="Relational Databases (SQL)"
+          />
+          <CardItem
+            img="/img/technologies/nosql.png"
+            text="Document Databases (NOSQL)"
+          />
 
           <CardItem img="/img/technologies/html.png" text="HTML5" />
           <CardItem img="/img/technologies/css.png" text="CSS3" />
@@ -55,7 +61,6 @@ function TechProjects(props: ITechProjectsProps) {
           <CardItem
             img="/img/projects/prototype.svg"
             text="Prototypes"
-            href="/portfolio/prototypes"
             tag="Misc"
           />
         </CardRow>

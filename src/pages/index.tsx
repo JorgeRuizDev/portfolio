@@ -8,7 +8,7 @@ import React from "react";
 const Home: NextPage = () => {
   return (
     <FullPage>
-      <div className="slide">
+      <div className="slide flex items-center justify-center">
         <Presentation />
       </div>
 
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
       <div
         id="about"
-        className="slide w-full flex flex-col items-center justify-start gap-y-10"
+        className="slide w-full flex flex-col items-center justify-center gap-y-10"
       >
         <h1 className="relative">About Me</h1>
 

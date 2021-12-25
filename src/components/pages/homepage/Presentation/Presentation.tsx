@@ -5,7 +5,7 @@ interface IPresentationProps {}
 function Presentation(props: IPresentationProps) {
   return (
     <>
-      <div className="w-full h-full flex flex-col items-center justify-center  ">
+      <div className="w-full h-full flex flex-col items-center justify-center">
         <h1 className="subtitle">Hi<span className={"text-emerald-300"}>,</span></h1>
         <h1 className="title">
           I&apos;m <span className="underline decoration-primary-base">Jorge</span>
