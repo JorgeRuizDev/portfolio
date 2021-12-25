@@ -13,7 +13,8 @@ export default function Head({
     <>
       <NextHead>
         <title>
-          {subtitle == null ? "" : `${subtitle}  - `}{title}
+          {subtitle == null ? "" : `${subtitle}  - `}
+          {title}
         </title>
         <meta name="description" content="Jorge Ruiz Gómez Personal Webpage" />
 
@@ -25,8 +26,15 @@ export default function Head({
         <meta name="author" content="Jorge Ruiz Gómez" />
 
         <meta property="og:image" content="/img/preview.png" />
-        <meta property="og:image:secure_url" content="https://jorgeruizdev.com/img/preview.png" />
-        <meta property="og:image:type" content="image/jpeg" /> 
+        <meta
+          property="og:image:alt"
+          content="Jorge Ruiz Gómez Personal Webpage"
+        ></meta>
+        <meta
+          property="og:image:secure_url"
+          content="https://jorgeruizdev.com/img/preview.png"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="978" />
         <meta property="og:image:height" content="549" />
         <meta
