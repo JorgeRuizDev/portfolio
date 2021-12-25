@@ -99,7 +99,7 @@ export default function SpotMyFM() {
           title="Filter your library"
           description={
             <p className="text-lg">
-              SpotMyFM includes multiple filters to check
+              SpotMyFM includes several filters that can help you to organize your library.
             </p>
           }
         >
@@ -125,8 +125,8 @@ export default function SpotMyFM() {
           title="Create Playlists"
           description={
             <p className="text-lg">
-              Create of Replaces an existing playlist with your track selection
-              / filtered results.
+              Create or Replace an existing playlist with your custom track selection
+              or filter results.
             </p>
           }
         >
