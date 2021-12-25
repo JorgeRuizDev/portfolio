@@ -14,7 +14,7 @@ function CardItem({ href, img, text, tag }: ICardItemProps) {
   return (
     <ActiveLink href={href}>
       <a
-        className={` min-w-[150px] h-full rounded-xl  p-3 flex flex-col items-center justify-center w-fit transition duration-500 hover:bg-slate-100/[.2] ${
+        className={` min-w-[100px] md:min-w-[150px] h-full rounded-xl  p-3 flex flex-col items-center justify-center w-fit transition duration-500 hover:bg-slate-100/[.2] ${
           href && "cursor-pointer"
         }`}
       >
