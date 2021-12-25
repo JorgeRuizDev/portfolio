@@ -1,11 +1,13 @@
 import ActiveLink from "components/core/ActiveLink/ActiveLink";
 import Feature from "components/core/Feature";
+import Head from "components/core/Head";
 import ProjectHeader from "components/core/ProjectHeader";
 import React from "react";
 
 export default function Questionnaire() {
   return (
     <div>
+      <Head subtitle="Questionnaire"/>
       <ProjectHeader
         title="Teacher Evaluation Platform"
         source={{

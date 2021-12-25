@@ -1,0 +1,8 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" d="m152,250c-55.24862,0 -100,-44.75138 -100,-100c0,-55.24862 44.75138,-100 100,-100c55.24862,0 100,44.75138 100,100c0,55.24862 -44.75138,100 -100,100z" opacity="undefined" stroke-width="0" stroke="#000" fill="#ffffff"/>
+  <text transform="matrix(3.36727 0 0 3.49371 -296.762 -417.835)" stroke="#000" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_1" y="170.55312" x="110.45891" stroke-width="0" fill="#000000">JRD</text>
+ </g>
+
+</svg>

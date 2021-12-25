@@ -6,6 +6,7 @@ import useTouch from "hooks/useTouch";
 import React from "react";
 import Navbar from "components/core/Navbar";
 import Footer from "components/core/Footer";
+import Head from "components/core/Head";
 
 const FluidBackgroundContainer = dynamic(
   () => import("components/core/FluidBackground"),
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head />
       <Navbar />
       <div>
         <FluidBackgroundContainer />

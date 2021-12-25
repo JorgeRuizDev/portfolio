@@ -1,10 +1,12 @@
 import Feature from "components/core/Feature";
+import Head from "components/core/Head";
 import ProjectHeader from "components/core/ProjectHeader";
 import React from "react";
 
 export default function SpotMyFM() {
   return (
     <div>
+      <Head subtitle="SpotMyFM"/>
       <ProjectHeader
         title="SpotMyFM"
         web={{
